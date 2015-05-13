@@ -1,5 +1,6 @@
 # AnimatedText.js
 Animate Text With One Function Easily
+Example Animation [Here](animatedtext.matthewteta.com).
 
 ### Requirements
 
@@ -21,12 +22,14 @@ animateText("Example", 400, '#header', 100, 200);
 
 ###Recommendations
 The element that is being animated can be hidden in css and the taxt can be grabbed from the element contents in jQuery.
+
 CSS:
 ```
 div h3 {
   display: none;
 }
 ```
+
 JS:
 ```
 animateText($('div h3').html(), 400, 'div h3', 100, 200);
