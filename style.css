@@ -1,0 +1,119 @@
+@-webkit-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-Regular.ttf');
+	font-weight: regular;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-Light.ttf');
+	font-weight: light;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('fonts/Oswald-Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/Roboto-Light.ttf');
+	font-weight: light;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+	overflow: hidden;
+	background-color: #fff;
+}
+
+h1 {
+	width: 65%;
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Oswald', sans-serif;
+	font-size: 8.75em;
+	text-align: center;
+	line-height: 1.25em;
+}
+
+h3 {
+	padding: 0;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+h1, h3 {
+	color: #1abc9c;
+}
+
+div.centered {
+	display: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+div#section-one {
+	background-image: url("https://unsplash.it/g/?random");
+}
+
+div#section-two {
+	
+}
+
+.animate:after {
+	position: relative;
+	content: '|';
+	color: #1abc9c;
+	-webkit-animation: blink 1.5s infinite;
+	        animation: blink 1.5s infinite;
+}
+
+.animate[color=""#fff"] {
+	color: white;
+}
+
+.animate.done:after {
+	content: '';
+}
