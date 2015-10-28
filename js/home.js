@@ -6,12 +6,12 @@ $(document).ready(function() {
 
 function animatePage() {
     var headerText = $('.animate#header').html();
-    var headerAnimateInterval = 50;
+    var headerAnimateInterval = 200;
     var subText = $('.animate#sub-text').html();
-    var subTextAnimateInterval = 50;
+    var subTextAnimateInterval = 200;
     
     $('div.centered').show();
     
-    var nextDelay = animateText(headerText, headerAnimateInterval, 'div.section:first .animate#header', 100, 100);
-    animateText(subText, subTextAnimateInterval, 'div.section:first .animate#sub-text', nextDelay, 100);
+    var nextDelay = animateText(headerText, headerAnimateInterval, 'div.section:first .animate#header', 100, 0);
+    animateText(subText, subTextAnimateInterval, 'div.section:first .animate#sub-text', nextDelay, 0);
 }
