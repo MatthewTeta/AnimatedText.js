@@ -6,9 +6,9 @@ $(document).ready(function() {
 
 function animatePage() {
     var headerText = $('.animate#header').html();
-    var headerAnimateInterval = 50;
+    var headerAnimateInterval = 10;
     var subText = $('.animate#sub-text').html();
-    var subTextAnimateInterval = 50;
+    var subTextAnimateInterval = 10;
     
     $('div.centered').show();
     
